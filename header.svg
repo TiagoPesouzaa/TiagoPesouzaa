@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Tiago Pereira de Souza, AI Engineer. Diagrama de um sistema multiagente: query, orquestrador, planner, retriever, tools, LLM e resposta.">
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#1F3050"/>
+    </pattern>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5EE1C6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#5EE1C6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fade" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#0E1726" stop-opacity="1"/>
+      <stop offset="0.45" stop-color="#0E1726" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#0E1726" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="card"><rect width="1200" height="360" rx="18"/></clipPath>
+
+    <path id="e1" d="M674,180 L754,180"/>
+    <path id="e2" d="M800,166 C846,118 868,94 902,92"/>
+    <path id="e3" d="M806,180 L902,180"/>
+    <path id="e4" d="M800,194 C846,242 868,266 902,268"/>
+    <path id="e5" d="M938,92 C992,94 1010,148 1042,168"/>
+    <path id="e6" d="M938,180 L1040,180"/>
+    <path id="e7" d="M938,268 C992,266 1010,212 1042,192"/>
+    <path id="e8" d="M1082,180 L1132,180"/>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="360" fill="#0E1726"/>
+    <rect width="1200" height="360" fill="url(#grid)"/>
+    <rect width="760" height="360" fill="url(#fade)"/>
+
+    <!-- Texto -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="15" fill="#6F86A8">
+      <text x="64" y="104">~/tiago-pereira-de-souza</text>
+    </g>
+    <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+      <text x="62" y="168" font-size="52" font-weight="700" fill="#E8EEF7" letter-spacing="-1">Tiago Pereira de Souza</text>
+      <text x="64" y="212" font-size="24" font-weight="600" fill="#5EE1C6">AI Engineer</text>
+      <text x="64" y="254" font-size="18" fill="#9DB0CB">Sistemas com LLMs, agentes autônomos e RAG</text>
+      <text x="64" y="280" font-size="18" fill="#9DB0CB">projetados para rodar em produção.</text>
+    </g>
+
+    <!-- Arestas -->
+    <g fill="none" stroke="#2E4568" stroke-width="2" stroke-linecap="round">
+      <use href="#e1"/><use href="#e2"/><use href="#e3"/><use href="#e4"/>
+      <use href="#e5"/><use href="#e6"/><use href="#e7"/><use href="#e8"/>
+    </g>
+
+    <!-- Nós -->
+    <g fill="#0E1726" stroke="#4C6A92" stroke-width="2">
+      <circle cx="662" cy="180" r="10"/>
+      <circle cx="920" cy="92" r="16"/>
+      <circle cx="920" cy="180" r="16"/>
+      <circle cx="920" cy="268" r="16"/>
+      <circle cx="1144" cy="180" r="10"/>
+    </g>
+    <circle cx="780" cy="180" r="48" fill="url(#halo)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="780" cy="180" r="24" fill="#122038" stroke="#5EE1C6" stroke-width="2"/>
+    <circle cx="780" cy="180" r="7" fill="#5EE1C6"/>
+    <circle cx="1060" cy="180" r="48" fill="url(#halo)" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.5;0.62;0.8;1" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <rect x="1038" y="158" width="44" height="44" rx="10" fill="#122038" stroke="#5EE1C6" stroke-width="2"/>
+    <g fill="#5EE1C6">
+      <rect x="1050" y="170" width="8" height="8" rx="2"/><rect x="1062" y="170" width="8" height="8" rx="2"/>
+      <rect x="1050" y="182" width="8" height="8" rx="2"/><rect x="1062" y="182" width="8" height="8" rx="2" opacity="0.5"/>
+    </g>
+
+    <!-- Rótulos -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#7F96B8" text-anchor="middle">
+      <text x="662" y="214">query</text>
+      <text x="780" y="232">orchestrator</text>
+      <text x="920" y="62">planner</text>
+      <text x="920" y="150">retriever</text>
+      <text x="920" y="304">tools</text>
+      <text x="1060" y="232">llm</text>
+      <text x="1144" y="152">answer</text>
+    </g>
+
+    <!-- Pulsos: um ciclo de 4s, cada etapa no seu tempo -->
+    <g fill="#5EE1C6">
+      <circle r="4" opacity="0">
+        <animateMotion dur="4s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.02;0.14;1" calcMode="linear"><mpath href="#e1"/></animateMotion>
+        <animate attributeName="opacity" dur="4s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.02;0.14;0.15;1"/>
+      </circle>
+      <circle r="4" opacity="0">
+        <animateMotion dur="4s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.2;0.36;1" calcMode="linear"><mpath href="#e2"/></animateMotion>
+        <animate attributeName="opacity" dur="4s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.2;0.21;0.36;0.37;1"/>
+      </circle>
+      <circle r="4" opacity="0">
+        <animateMotion dur="4s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.2;0.34;1" calcMode="linear"><mpath href="#e3"/></animateMotion>
+        <animate attributeName="opacity" dur="4s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.2;0.21;0.34;0.35;1"/>
+      </circle>
+      <circle r="4" opacity="0">
+        <animateMotion dur="4s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.2;0.36;1" calcMode="linear"><mpath href="#e4"/></animateMotion>
+        <animate attributeName="opacity" dur="4s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.2;0.21;0.36;0.37;1"/>
+      </circle>
+      <circle r="4" opacity="0">
+        <animateMotion dur="4s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.42;0.58;1" calcMode="linear"><mpath href="#e5"/></animateMotion>
+        <animate attributeName="opacity" dur="4s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.42;0.43;0.58;0.59;1"/>
+      </circle>
+      <circle r="4" opacity="0">
+        <animateMotion dur="4s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.44;0.58;1" calcMode="linear"><mpath href="#e6"/></animateMotion>
+        <animate attributeName="opacity" dur="4s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.44;0.45;0.58;0.59;1"/>
+      </circle>
+      <circle r="4" opacity="0">
+        <animateMotion dur="4s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.42;0.58;1" calcMode="linear"><mpath href="#e7"/></animateMotion>
+        <animate attributeName="opacity" dur="4s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.42;0.43;0.58;0.59;1"/>
+      </circle>
+      <circle r="4" opacity="0">
+        <animateMotion dur="4s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.66;0.76;1" calcMode="linear"><mpath href="#e8"/></animateMotion>
+        <animate attributeName="opacity" dur="4s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.66;0.67;0.76;0.77;1"/>
+      </circle>
+    </g>
+    <circle cx="1144" cy="180" r="5" fill="#5EE1C6" opacity="0">
+      <animate attributeName="opacity" dur="4s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.76;0.78;0.92;1"/>
+    </circle>
+  </g>
+</svg>
